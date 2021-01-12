@@ -60,3 +60,5 @@ Carlos Dante (carloscdante)
 [shellJS](https://github.com/shelljs/shelljs)
 
 [chalk](https://github.com/chalk/chalk)
+
+[yargs](https://github.com/yargs/yargs)
