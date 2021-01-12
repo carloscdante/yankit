@@ -49,7 +49,7 @@ const argv = yargs
             type: 'string',
         }
     })
-    .command('$0', 'Yankit - File Structure Macro Utility', () => {}, (argv) => {
+    .command('$0', 'Yankit - Folder Structure Macro Utility', () => {}, (argv) => {
         yargs.showHelp()
     })
     .option('version', {
@@ -76,7 +76,7 @@ const argv = yargs
         const folder = argv.folder;
         const name = argv.name;
 
-        paste.populate(folder, name)
+        paste.populate(name, folder)
     }
 
     if (argv._.includes('list')) {

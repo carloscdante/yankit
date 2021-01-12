@@ -1,7 +1,7 @@
 # Yankit
-### File Structure Macro Utility
+### Folder Structure Macro Utility
 
-Yankit is a utility for creating macros that generate file structures. Basically, it copies the entire folder structure (without the files) and stores it in a .json file, allowing you to create any saved structure everytime you want to make a new project.
+Yankit is a utility for creating macros that generate folder structures. Basically, it copies the entire folder structure (without the files) and stores it in a .json file, allowing you to create any saved structure everytime you want to make a new project.
 
 ## Why?
 Copying directories without their files using the terminal is a pain, besides, you are not even able to store the folders to create a new project later, so I always find myself making directories everytime I want to start a new project. Yankit gets rid of this hassle.
