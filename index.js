@@ -49,6 +49,9 @@ const argv = yargs
             type: 'string',
         }
     })
+    .command('$0', 'Yankit - File Structure Macro Utility', () => {}, (argv) => {
+        yargs.showHelp()
+    })
     .option('version', {
         alias: 'v',
         description: 'Show the version'
