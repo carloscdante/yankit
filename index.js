@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const yargs = require('yargs');
 let yankit = require('./lib/yank.js')
+let paste = require('./lib/paste.js')
 let package = require('./package.json')
 
 const argv = yargs
@@ -16,6 +17,18 @@ const argv = yargs
             type: 'string',
         }
     })
+    .command('paste', 'Yanks a folder structure from a given folder.', {
+        folder: {
+            description: 'The master folder to create all directories in.',
+            alias: 'f',
+            type: 'string',
+        },
+        name: {
+            description: 'Name of the yank to be activated.',
+            alias: 'n',
+            type: 'string',
+        }
+    })
     .command('unyank', 'Deletes a yank from the Yankfile.', {
         name: {
             description: 'Name of the yank to be deleted from the Yankfile.',
@@ -23,6 +36,7 @@ const argv = yargs
             type: 'string',
         }
     })
+    .command('list', 'List all yanks.', {})
     .command('gityank', 'Yanks a folder structure from a Git repository.', {
         url: {
             description: 'The repository URL.',
@@ -53,6 +67,17 @@ const argv = yargs
         const name = argv.name;
 
         yankit.yank(folder, name)
+    }
+
+    if (argv._.includes('paste')) {
+        const folder = argv.folder;
+        const name = argv.name;
+
+        paste.populate(folder, name)
+    }
+
+    if (argv._.includes('list')) {
+        yankit.list()
     }
 
     if (argv._.includes('unyank')) {
