@@ -1,0 +1,27 @@
+{
+  "name": "yankit",
+  "version": "0.0.1",
+  "description": "File structure macro utility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./"
+  },
+  "keywords": [
+    "macro",
+    "yanker",
+    "file",
+    "filesystem",
+    "app",
+    "files"
+  ],
+  "author": "carloscdante",
+  "license": "GPL-2.0-only",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yargs": "^16.2.0"
+  }
+}
