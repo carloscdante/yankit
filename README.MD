@@ -62,3 +62,7 @@ Carlos Dante (carloscdante)
 [chalk](https://github.com/chalk/chalk)
 
 [yargs](https://github.com/yargs/yargs)
+
+#### Code (Licensed under the GPLv2)
+
+[Github](https://github.com/carloscdante/yankit)
